@@ -1,0 +1,41 @@
+{
+  "name": "backend-erp-v1",
+  "version": "1.0.0",
+  "description": "Teknologi yang dipakai node, drizzle ORM",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch src --exec ts-node src/server.ts",
+    "migrate:create": "mikro-orm migration:create",
+    "migrate:up": "mikro-orm migration:up",
+    "seed": "mikro-orm seeder:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mikro-orm/cli": "^6.4.13",
+    "@mikro-orm/core": "^6.4.13",
+    "@mikro-orm/migrations": "^6.4.13",
+    "@mikro-orm/postgresql": "^6.4.13",
+    "@mikro-orm/seeder": "^6.4.13",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.15.6",
+    "postgres": "^3.4.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/pg": "^8.11.14",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
