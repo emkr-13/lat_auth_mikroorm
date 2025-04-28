@@ -1,5 +1,5 @@
 import { defineConfig } from "@mikro-orm/postgresql";
-import { User } from "./models/user";
+import { User } from "../models/user";
 import "dotenv/config"; // Sesuaikan path
 
 export default defineConfig({
